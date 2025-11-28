@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DelivarySystem.CustomerOrderingFoodController">
+   <children>
+      <TextField fx:id="searchBar" layoutX="36.0" layoutY="66.0" onKeyReleased="#OnSearchBar" prefHeight="37.0" prefWidth="183.0" promptText="Search Restaurant">
+         <font>
+            <Font size="19.0" />
+         </font></TextField>
+      <ChoiceBox fx:id="choicebox" layoutX="24.0" layoutY="25.0" prefWidth="150.0" />
+      <TableView fx:id="RestaurantTable" layoutX="109.0" layoutY="119.0" prefHeight="200.0" prefWidth="396.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="125.33328247070312" text="Restaurant Name" />
+            <TableColumn fx:id="score" prefWidth="118.66668701171875" text="Score" />
+            <TableColumn fx:id="price" prefWidth="60.66668701171875" text="Price" />
+            <TableColumn fx:id="zipcode" prefWidth="88.66668701171875" text="Zipcode" />
+        </columns>
+      </TableView>
+      <Button layoutX="193.0" layoutY="332.0" mnemonicParsing="false" onAction="#OnDetailsShow" text="Show Restaurant Details">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Button layoutX="498.0" layoutY="352.0" mnemonicParsing="false" onAction="#OnQuit" text="Quit" />
+      <TextField fx:id="lowScore" layoutX="247.0" layoutY="51.0" promptText="Enter Low Score" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="highScore" layoutX="425.0" layoutY="52.0" promptText="Enter High Score" visible="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Button layoutX="350.0" layoutY="12.0" mnemonicParsing="false" onAction="#OnSearchWithScoreRange" text="Search With Score Range" />
+      <Button fx:id="Search" layoutX="394.0" layoutY="86.0" mnemonicParsing="false" onAction="#OnSearchSubmit" text="Search" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DelivarySystem.LoginCutomerController">
+   <children>
+      <Button fx:id="customerNameSubmit" defaultButton="true" layoutX="429.0" layoutY="199.0" mnemonicParsing="false" onAction="#OncustomerNameSubmit" prefHeight="33.0" prefWidth="108.0" text="Submit">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <TextField fx:id="customerName" layoutX="240.0" layoutY="100.0" prefHeight="69.0" prefWidth="345.0" promptText="Customer Name">
+         <font>
+            <Font size="37.0" />
+         </font></TextField>
+      <Button fx:id="Quit" defaultButton="true" layoutX="489.0" layoutY="319.0" mnemonicParsing="false" onAction="#OnQuit" text="Quit">
+         <font>
+            <Font size="22.0" />
+         </font></Button>
+      <Button defaultButton="true" layoutX="285.0" layoutY="199.0" mnemonicParsing="false" onAction="#onReset" prefHeight="33.0" prefWidth="108.0" text="Reset">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <ImageView fitHeight="208.0" fitWidth="217.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@foodlover.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="123.0" layoutY="32.0" text="Hey foodie,What's your name?" textFill="#4ba7f8">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="317.0" text="\@FoodForces">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
